@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    --maincolor: #404375;
+    --white:rgb(255, 255, 255);
+    --yellow:rgb(133, 131, 131);
+    --grey:rgb(37, 37, 37);
+}
+.resume{
+    width: 900px;
+    margin: auto;
+}
+.container{
+    padding: 15px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgb(192, 192, 192);
+}
+.name-section{
+    background: var(--maincolor);
+    border-radius: 8px;
+    height: 230px;
+    clip-path: polygon(100% 0, 100% 82%, 63% 100%, 0 82%, 0 0);
+    position: relative;
+    overflow: hidden;
+}
+.name-section::before{
+    content: "";
+    position: absolute;
+    bottom: 17%;
+    left: 0%;
+    height: 18px;
+    width: 18px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -5px 5px white;
+    background:var(--maincolor);
+}
+.name-section::after{
+    content: "";
+    position: absolute;
+    bottom: 17%;
+    right:0%;
+    height: 18px;
+    width: 18px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px white;
+    background:var(--maincolor);
+}
+.name-section .left-side{
+    width: 450px;
+}
+.name-section .right-side{
+    width: 450px;
+}
+
+
+/* --------name-section start------- */
+
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.name .left-side .name-heading {
+    padding: 20px;
+    padding-bottom: 5px;
+}
+.name .left-side .name-heading h1{
+    color:var(--white) ;
+    font-weight: 400;
+}
+.name .left-side .name-heading p{
+    color:var(--white);
+    font-weight: 550;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.name .left-side .name-para{
+    padding-left: 22px;
+}
+.name .left-side .name-para P{
+    color: var(--white);
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+
+.name .right-side .contact{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.name .right-side .contact p{
+    color: var(--white);
+    font-size: 14px;
+    text-align: end;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+.name .right-side .contact p i{
+    color: var(--yellow);
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+
+.line{
+    height: 1px;
+    width: 100%;
+    background: rgba(204, 202, 202, 0.274);
+    z-index: 10;
+    margin-top: 15px;
+}
+
+/* --------name-section end------- */
+
+.container .img {
+    position: absolute;
+    top: 140px;
+    left:480px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container .img img{
+    width: 130px;
+    height: 130px;
+    border: 8px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 100% 30%;
+}
+
+
+.content{
+    display: flex;
+}
+.content .left-side{
+    width: 450px;
+    padding-left: 1.8em;
+    padding-top: 1em;
+}
+.content .right-side{
+    width: 450px;
+    padding-top: 3em;
+    padding-left: 4em;
+}
+
+/* --------work experience start------- */
+
+.content .left-side .work-experience .work-heading h4{
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.content .left-side .work-experience .work-heading h4 i{
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--maincolor);
+    margin-right: 10px;
+}
+.content .left-side .work-experience .work-box h5{
+    font-weight: 700;
+    padding-top: 18px;
+    font-size: 18px;
+}
+.content .left-side .work-experience .work-box p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.content .left-side .work-experience .work-box small{
+    color: var(--yellow);
+    font-size: 16px;
+}
+
+
+/* --------work experience end------- */
+
+
+
+
+/* --------project experience start------- */
+
+.content .left-side .project-experience{
+    margin-top: 1.5em;
+}
+.content .left-side .project-experience .project-heading h4{
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.content .left-side .project-experience .project-heading h4 i{
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--maincolor);
+    margin-right: 10px;
+}
+.content .left-side .project-experience .project-box{
+    padding-bottom: 0.5em;
+}
+.content .left-side .project-experience .project-box h5{
+    font-weight: 700;
+    padding-top: 18px;
+    font-size: 18px;
+}
+.content .left-side .project-experience .project-box p{
+    font-weight: 500;
+    font-size: 16px;
+}
+.content .left-side .project-experience .project-box a{
+    color: var(--yellow);
+    font-size: 16px;
+    display: block;
+    margin: 0.5em 0;
+}
+.content .left-side .project-experience .project-box> .technology> h5{
+    font-size: 14px;
+    padding: 0;
+    margin: 0.3em 0;
+}
+.content .left-side .project-experience .project-box> .technology> .technology-box> span{
+    font-size: 14px;
+}
+
+/* --------project experience end------- */
+
+
+
+/* --------skills start------- */
+
+.content .right-side .skills {
+    padding-bottom: 1em;
+}
+.content .right-side .skills .skills-heading h4{
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.content .right-side .skills .skills-heading h4 i{
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--maincolor);
+    margin-right: 10px;
+}  
+.content .right-side .skills .skills-box {
+    margin-top: 1em;
+}
+.content .right-side .skills .skills-box span{
+    padding: 3px 6px;
+    background: var(--maincolor);
+    display: inline-block;
+    margin: 3px;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 18px;
+    border: 1px solid rgb(20, 20, 20);
+    font-weight: bold;
+}
+
+/* --------skills end------- */
+
+
+
+/* ---------------education start-------*/
+
+.content .right-side .education {
+    padding-bottom: 1em;
+}
+.content .right-side .education .education-heading h4{
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.content .right-side .education .education-heading h4 i{
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--maincolor);
+    margin-right: 10px;
+}  
+.content .right-side .education .education-box{
+    margin-top: 1em;
+}
+.content .right-side .education .education-box h5{
+    font-size: 18px;
+}
+.content .right-side .education .education-box small,p{
+    color: var(--yellow);
+    font-size: 16px;
+}
+
+/* ---------------education end-------*/
+
+
+
+/* ---------------strenth start-------*/
+
+.content .right-side .strenth {
+    padding-bottom: 1em;
+}
+.content .right-side .strenth .strenth-heading h4{
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.content .right-side .strenth .strenth-heading h4 i{
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--maincolor);
+    margin-right: 10px;
+}  
+.content .right-side .strenth  .strenth-box {
+    margin-top: 1em;
+}
+.content .right-side .strenth  .strenth-box ul li{
+    font-size: 16px;
+    padding-bottom: 0.5em;
+    list-style: inside;
+}
+
+/* ---------------strenth end-------*/
+
+
+
+
+
+/* --------certificates start------- */
+
+.content .right-side .certificates {
+    padding-bottom: 1em;
+}
+.content .right-side .certificates .certificates-heading h4{
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.content .right-side .certificates .certificates-heading h4 i{
+    color: var(--white);
+    padding: 6px;
+    border-radius: 5px;
+    background: var(--maincolor);
+    margin-right: 10px;
+}  
+.content .right-side .certificates .certificates-box {
+    margin-top: 1em;
+}
+.content .right-side .certificates .certificates-box ul li{
+    font-size: 16px;
+    padding-bottom: 0.5em;
+    list-style: inside;
+}
+
+/* --------certificates end------- */
+
+
+
+/* ---------------languages start-------*/
+
+.content .right-side .languages {
+    padding-bottom: 1em;
+}
+.content .right-side .languages .languages-heading h4{
+    color: var(--maincolor);
+    font-size: 20px;
+}
+.content .right-side .languages .languages-heading h4 i{
+    color: var(--white);
+    padding: 5px;
+    border-radius: 5px;
+    background: var(--maincolor);
+    margin-right: 10px;
+}  
+.content .right-side .languages .languages-box{
+    margin-top: 1em; 
+    display: flex;
+}
+.content .right-side .languages .languages-box i{
+    font-size: 16px;
+    color: var(--maincolor);
+}
+.content .right-side .languages .languages-box .english, .hindi{
+    margin-right: 16px;
+}
+
+/* ---------------languages end-------*/
+
+
+
+
+
